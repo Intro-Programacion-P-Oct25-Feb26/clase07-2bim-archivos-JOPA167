@@ -22,6 +22,10 @@ public class LeerArchivoTexto {
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split("\\|"));
+                /*
+                Ponemos doble \ ya que con eso escapamos de unos caracteres que son
+                especiales el . y ; no cuentan
+                */
                 ArrayList<String> linea_partes = new ArrayList<>(lista);
                 
                 
