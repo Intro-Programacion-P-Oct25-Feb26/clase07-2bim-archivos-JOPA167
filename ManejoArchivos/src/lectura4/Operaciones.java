@@ -21,26 +21,24 @@ public class Operaciones {
         double suma = 0;
         double resultado;
         double contador = 0;
-        double numero =0;
+        double numero = 0;
 
         try {
             Scanner entrada = new Scanner(new File("data/datosDos.txt"));
-
+            if (entrada.hasNextLine()) {
+                entrada.nextLine();  
+            }
             while (entrada.hasNext()) {
+
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split("\\|"));
                 ArrayList<String> linea_partes = new ArrayList<>(lista);
                 numero = Double.parseDouble(linea_partes.get(3));
-                    
                 suma = suma + numero;
-                contador=contador + 1;
-                    
-                }
-
-            
+                contador = contador + 1;
+            }
             entrada.close();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.err.println("Error al leer del archivo.");
             System.exit(1);
         }
