@@ -36,7 +36,8 @@ public class Estadistica {
             }
         
         resultado = suma/resultado;
+        resultado = Math.ceil(resultado);
         System.out.printf("El promedio de los empleados de todas las empresas es:"
-                + " %.2f",resultado);
+                + " %.0f",resultado);
     }
 }
