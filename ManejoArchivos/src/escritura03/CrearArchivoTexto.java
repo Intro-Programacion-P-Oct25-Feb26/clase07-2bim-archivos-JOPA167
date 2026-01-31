@@ -14,7 +14,7 @@ public class CrearArchivoTexto {
             OutputStreamWriter osw = new OutputStreamWriter(fos);
             Formatter salida = new Formatter(osw);
             
-            salida.format("%s", valor);
+            salida.format("%s\n", valor);
             salida.close();
 
         } catch (Exception e) {

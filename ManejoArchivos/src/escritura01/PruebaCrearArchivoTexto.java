@@ -18,7 +18,7 @@ public class PruebaCrearArchivoTexto {
             int edad = entrada.nextInt();
             entrada.nextLine();
 
-            cadenaFinal = String.format("%s%s %s %d\n", cadenaFinal,
+            cadenaFinal = String.format("%s %s %s %d\n", cadenaFinal,
                     nombre,
                     apellido, edad);
         }
