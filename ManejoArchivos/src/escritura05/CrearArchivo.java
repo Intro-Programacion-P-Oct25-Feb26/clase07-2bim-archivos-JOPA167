@@ -26,6 +26,9 @@ public class CrearArchivo {
             OutputStreamWriter osw = new OutputStreamWriter(fos);
             Formatter salida = new Formatter(osw);
             
+            salida.format("%s",reporte);
+            salida.close();
+            
         } catch (Exception e) {
             System.err.println("Error al crear el archivo.");
             System.exit(1);
