@@ -4,11 +4,13 @@
  */
 package escritura05;
 
-import escritura04.Operacion;
+
+
 import java.util.Scanner;
 
 /**
  *
+
  * @author Alexito
  */
 public class Principal {
@@ -35,6 +37,7 @@ public class Principal {
             if(!opcion.equals("C")){
                 bandera =false;
             }
+
         }
     }
 }
